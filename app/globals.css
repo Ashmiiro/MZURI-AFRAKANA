@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-display), Georgia, serif;
+  --font-serif: var(--font-display), Georgia, serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  
+  /* Natural Tones Theme Color Mappings */
+  --color-stone-50: #F9F7F2;       /* Natural Cream Background */
+  --color-stone-100: #E6E2D8;      /* Warm Stone Gray */
+  --color-stone-150: #DDD9CE;      /* Slightly darker Warm Stone */
+  --color-stone-200: #CECA9D;      /* Sage-accented stone border */
+  --color-stone-250: #C2BEB0;
+  --color-stone-300: #B4B0A0;
+  --color-stone-400: #949080;
+  --color-stone-500: #7C786A;
+  --color-stone-600: #5C5C54;      /* Olive-Charcoal Medium Text */
+  --color-stone-650: #4F4F48;
+  --color-stone-700: #42493A;      /* Deep Sage Green - Natural Trim */
+  --color-stone-800: #383E31;      /* Darker Deep Sage */
+  --color-stone-850: rgba(66, 73, 58, 0.4);
+  --color-stone-900: #2C2C28;      /* Deep Charcoal / Warm Olive-Black for primary brand details */
+  --color-stone-950: #42493A;      /* Deep Sage Green - core brand feature backgrounds/buttons */
+
+  /* Dedicated Brand Named Colors */
+  --color-brand-cream: #F9F7F2;
+  --color-brand-charcoal: #2C2C28;
+  --color-brand-green: #42493A;
+  --color-brand-stone: #E6E2D8;
+  --color-brand-gold: #D4AF37;
+
+  /* Premium Warm Gold Scale */
+  --color-gold-50: #FCFAF5;
+  --color-gold-100: #F5EEDF;
+  --color-gold-200: #EADCB9;
+  --color-gold-300: #DCC28A;
+  --color-gold-400: #D9BE7B;
+  --color-gold-500: #D4AF37;       /* Core Theme Gold Accent */
+  --color-gold-600: #BC982E;
+  --color-gold-700: #997A1E;
+  --color-gold-800: #775F11;
+  --color-gold-900: #564408;
+  --color-gold-950: #292002;
+}
+
+@utility transition-all-custom {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bg-pattern {
+  background-image: radial-gradient(#42493a0b 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
+}
+

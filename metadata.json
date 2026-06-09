@@ -1,0 +1,6 @@
+{
+  "name": "Mzuri Afrikana Safaris",
+  "description": "Ultra-premium, experiential luxury travel in East Africa. Explore Africa in Style with customized private safaris into Uganda, Kenya, Rwanda, and Tanzania.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
