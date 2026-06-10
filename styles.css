@@ -1,0 +1,79 @@
+/* Custom luxury styling for Mzuri Afrikana Safaris */
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1c1917; /* stone-900 */
+}
+
+/* Base custom classes to support fluid animations */
+.transition-all-custom {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(194, 121, 56, 0.15);
+  border-color: #c27938; /* gold-600 */
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf7ed; /* gold-100 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c27938; /* gold-600 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a25d2c; /* gold-700 */
+}
+
+/* Animated keyframe backdrops */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.03);
+  }
+}
+
+.safari-glow {
+  animation: pulseGlow 15s ease-in-out infinite;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #e1b173, #834b26) 1;
+}
+
+/* Custom Accordion state classes */
+.faq-answer-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.faq-answer-container.expanded {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+/* Line limits for descriptions */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
